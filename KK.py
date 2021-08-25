@@ -217,6 +217,7 @@ def menu():
     print(" \033[1;97m[3] See Crack Result")
     print(" \033[1;97m[4] Report Problem")
     print(" \033[1;97m[5] See Token")
+    print(" \033[1;97m[6] Hack From File")
     print(" ["+m+"0"+p+"] Exit (Remove Token)")
     print ' '
     asw = raw_input("\n [!] Choose : ")
@@ -232,7 +233,7 @@ def menu():
     	cekakun()
     elif asw == "5":
         infologin()
-    elif asw =="3":
+    elif asw =="6":
 		os.system('clear')
 		print logo
 		print "\033[1;96m•◈•───────────────•◈•\033[1;97mFARIYA\033[1;96m•◈•───────────────•◈•"
