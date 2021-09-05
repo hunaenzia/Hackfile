@@ -899,6 +899,7 @@ def idfromfriend():
 		for a in z['friends']['data']:
 			idh.append(a['id'])
 			bz.write(a['id'] + '\n')
+			print ("\r["+str(len(idh))+" ] => "+a['id']),;sys.stdout.flush();time.sleep(0.001)
 		bz.close()
 		print '\r[✓] The Process Has Been Completed.'
 		print"\r[✓] Total IDs Founded : "+str(len(idh))
@@ -959,6 +960,7 @@ def emailfromfriend():
 			try:
 				emfromfriend.append(z['email'])
 				bz.write(z['email'] + '\n')
+				print ("\r\033[1;97m[ \033[1;97m"+str(len(emfromfriend))+"\033[1;97m ]\033[1;97m  \033[1;97m"+z['email']+" | "+z['name']+"\n"),;sys.stdout.flush();time.sleep(0.0001)
 			except KeyError:
 				pass
 		bz.close()
@@ -1024,6 +1026,7 @@ def numberfromfriend():
 			try:
 				nofromfriend.append(z['mobile_phone'])
 				bz.write(z['mobile_phone'] + '\n')
+				print ("\r\033[1;97m[ \033[1;97m"+str(len(nofromfriend))+"\033[1;97m ]\033[1;97m \033[1;97m"+z['mobile_phone']+" | "+z['name']+"\n"),;sys.stdout.flush();time.sleep(0.001)
 			except KeyError:
 				pass
 		bz.close()
