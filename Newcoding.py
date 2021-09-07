@@ -182,7 +182,7 @@ def menu():
 	except requests.exceptions.ConnectionError:
 		exit(" [!] no internet connection")
 	logo()
-	print("\t ENJOY FREE CLONING ")
+	print ('\033[1;97mENJOY FREE CLONING\n').center(50)
 	print("\033[1;97m--------------------------------------------------")
 	print"\t [ Logged User \033[1;93m"+nama+"\033[1;97m ]"
 	print("\033[1;97m--------------------------------------------------")
