@@ -95,8 +95,8 @@ def logo():
 	print("\033[1;97m--------------------------------------------------")
 
 def main():
-    os.system("clear")
-    logo()
+	os.system("clear")
+	logo()
     print(" \033[1;97m[1] Login With Access-Token")
     print(" \033[1;97m[2] How To Get Access-Token Without Any Problem")
     print(" \033[1;97m[3] Tech Fari Youtube")
