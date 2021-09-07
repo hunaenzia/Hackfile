@@ -605,7 +605,7 @@ def setting_ua():
 		menu()
 	elif ua == "6":
 		logo()
-		print("Search On Google My User Agent & Copy User Agent And Paste Here\n")
+		print("\033[1;91mSearch On Google My User Agent & Copy User Agent And Paste Here\n")
 		c_ua = raw_input(" [+] Input User-Agent : ")
 		if c_ua == "":
 			print("\n \033[1;97m[!] Don't Be Empty")
