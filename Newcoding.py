@@ -97,22 +97,22 @@ def logo():
 def main():
 	os.system("clear")
 	logo()
-    print(" \033[1;97m[1] Login With Access-Token")
-    print(" \033[1;97m[2] How To Get Access-Token Without Any Problem")
-    print(" \033[1;97m[3] Tech Fari Youtube")
-    print ' '
-    asw = raw_input("\n \033[1;97m[!] Choose : ")
-    if asw == "":
-        main()
-    if asw == "1":
-        login()
-    if asw == "2":
-        gettoken()
-    if asw == "3":
-        yt()
-    else:
-    	jalan(" \033[1;97m[!] Choose Correct Option ! ")
-    	main()
+	print(" \033[1;97m[1] Login With Access-Token")
+	print(" \033[1;97m[2] How To Get Access-Token Without Any Problem")
+	print(" \033[1;97m[3] Tech Fari Youtube")
+	print ' '
+	asw = raw_input("\n \033[1;97m[!] Choose : ")
+	if asw == "":
+	    main()
+	if asw == "1":
+	    login()
+	if asw == "2":
+		gettoken()
+	if asw == "3":
+	    yt()
+	else:
+	    jalan(" \033[1;97m[!] Choose Correct Option ! ")
+	    main()
     	
 def gettoken():
     logo()
