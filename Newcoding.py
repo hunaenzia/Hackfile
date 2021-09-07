@@ -281,7 +281,7 @@ def publik():
 	except KeyError:
 		print(" \033[1;97m[!] Account Not Available OR Private FriendList")
 		menu()
-	print(" \033[1;97m[+] Total ID  : \033[0;91m%s\033[0;97m"%(len(id))) 
+	print(" \033[1;97m[+] Total ID : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def follower():
 	global token
@@ -301,7 +301,7 @@ def follower():
 	except KeyError:
 		print(" \033[1;97m[!] Account Not Available OR Private Followers")
 		menu()
-	print(" \033[1;97m[+] Total ID  : \033[0;91m%s\033[0;97m"%(len(id))) 
+	print(" \033[1;97m[+] Total ID : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def massal():
 	global token
