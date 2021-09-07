@@ -272,7 +272,7 @@ def publik():
 	logo()
 	print("\n \033[1;97m[!] Fill In 'me' If You Want From Own FriendsList")
 	print("")
-	idt = raw_input(" \033[1;97m[+] Input ID : \033[1;91m ")
+	idt = raw_input(" \033[1;97m[+] Input ID : \033[1;91m")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
@@ -292,7 +292,7 @@ def follower():
 	logo()
 	print("\n \033[1;97m[!] Fill In 'me' If You Want From Own Followers")
 	print("")
-	idt = raw_input(" \033[1;97m[+] Input ID : \033[1;91m ")
+	idt = raw_input(" \033[1;97m[+] Input ID : \033[1;91m")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/subscribers?limit=5000&access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
