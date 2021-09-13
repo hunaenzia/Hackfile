@@ -4,7 +4,7 @@
 
 
 try:
-    import os,sys,time,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,uuid,requests
+    import os,re,sys,itertools,time,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,uuid,requests
     from multiprocessing.pool import ThreadPool
 except ImportError:
     os.system("pkg install python -y")
