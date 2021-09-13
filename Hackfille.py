@@ -570,7 +570,7 @@ def setting_ua():
 	print(" \033[1;97m[4] Asus")
 	print(" \033[1;97m[5] Huawei")
 	print(" \033[1;97m[6] Motorola")
-	print(" \033[1;97m[6] Infinix")
+	print(" \033[1;97m[7] Infinix")
 	print(" \033[1;97m[8] Add Own User-Agent")
 	ua = raw_input("\n \033[1;97m[!] Choose User-Agent : ")
 	if ua =="":
